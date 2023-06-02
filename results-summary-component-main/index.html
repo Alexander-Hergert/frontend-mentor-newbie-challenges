@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-top">
+        <h3><span class="lavendar">Your Result</span></h3>
+        <div class="circle">
+          <span class="large">76</span><span class="lavendar">of 100</span>
+        </div>
+        <h2>Great</h2>
+        <p><span class="lavendar">
+          You scored higher than 65% of the people who have taken these tests.
+          </p></span>
+        </p>
+      </section>
+      <section class="section-bottom">
+        <h3 class="align-left">Summary</h3>
+        <div class="rating reaction">
+          <div class="vertical-align">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction-cion">
+              <span class="red category">Reaction</span>
+          </div>
+          <div><span class="score">80</span> <span class="transparent">/ 100</span></div>
+        </div>
+        <div class="rating memory">
+          <div class="vertical-align">
+            <img src="./assets/images/icon-memory.svg" alt="memory-icon">
+            <span class="yellow category">Memory</span>
+          </div>
+          <div><span class="score">92</span> <span class="transparent">/ 100</span></div>
+        </div>
+        <div class="rating verbal">
+          <div class="vertical-align">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal-icon">
+            <span class="green category">Verbal</span>
+          </div>
+          <div><span class="score">61</span> <span class="transparent">/ 100</span></div>
+        </div>
+        <div class="rating visual">
+          <div class="vertical-align">
+            <img src="./assets/images/icon-visual.svg" alt="visual-icon">
+            <span class="blue category">Visual</span>
+          </div>
+          <div><span class="score">72</span> <span class="transparent">/ 100</span></div>
+        </div>
+        <a href="" class="btn">Continue</a>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alexander Hergert</a>.
+    </footer>
+  </body>
+</html>
