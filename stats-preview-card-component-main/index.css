@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --border-radius: 5px;
+}
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+  background-color: var(--very-dark-blue);
+  padding: 2rem;
+}
+
+main {
+  background-color: var(--dark-desaturated-blue);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.section-image {
+  position: relative;
+}
+
+.section-text {
+  padding: 2rem;
+}
+
+.section-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--soft-violet);
+  background: linear-gradient(320deg, #ff61f3 0, #b86ffb 100%);
+}
+
+.section-image img {
+  mix-blend-mode: multiply;
+}
+
+span {
+  color: var(--soft-violet);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+h3,
+p {
+  color: var(--slightly-transparent-white);
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    padding: 0;
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 70rem;
+    min-height: 50%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    padding: 0 6rem 0 4rem;
+  }
+
+  picture {
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .statistics-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+  .section-text {
+    padding: 0 2rem;
+  }
+
+  .statistics-container {
+    margin-top: 0;
+    width: 100%;
+  }
+}
