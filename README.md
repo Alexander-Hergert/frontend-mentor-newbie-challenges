@@ -1,0 +1,1 @@
+This repository contains my personal solutions to the newbie challenges from Frontend Mentor. You can get an overview here: https://www.frontendmentor.io/challenges?difficulty=1&type=free
