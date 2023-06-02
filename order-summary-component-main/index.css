@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --border-radius: 15px;
+}
+
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main {
+  margin: auto;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  max-width: 30rem;
+}
+
+section {
+  overflow: hidden;
+}
+
+.section-top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.section-bottom {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 2rem 1.5rem;
+  background-color: white;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin: 1.5rem auto;
+  padding: 1.5rem 0;
+}
+
+.container {
+  margin-left: -2rem;
+  margin-right: 3rem;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+p,
+a {
+  margin: 0;
+  display: inline-block;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+  color: var(--desaturated-blue);
+}
+
+h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  background-color: var(--bright-blue);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 1.25rem 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 13px 30px hsl(224, 23%, 55%, 0.7);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container {
+    margin-left: 0;
+  }
+}
