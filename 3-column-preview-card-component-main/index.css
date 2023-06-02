@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --border-radius: 15px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  margin: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 50px;
+  max-width: 30rem;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+h2 {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+  margin: 15px 0;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 2;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--very-light-gray);
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+a:hover {
+  background-color: transparent;
+  border: 2px solid var(--transparent-white);
+  color: var(--transparent-white);
+}
+
+.btn-sedan {
+  color: var(--bright-orange);
+}
+
+.btn-suv {
+  color: var(--dark-cyan);
+}
+
+.btn-luxury {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 890px) {
+  main {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  section {
+    max-width: 200px;
+    height: 25rem;
+    padding-bottom: 0;
+  }
+
+  .sedan {
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: 0;
+  }
+
+  .luxury {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: 0;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
