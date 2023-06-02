@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: hsl(179, 62%, 43%, 75%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --border-radius: 5px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light-gray);
+  color: white;
+  padding: 2rem;
+}
+
+main {
+  border-radius: var(--border-radius);
+  box-shadow: 0px 10px 20px var(--grayish-blue);
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+.section-top {
+  background-color: white;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+h1 {
+  color: var(--cyan);
+  margin: 0;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.money-back {
+  color: var(--bright-yellow);
+  margin-bottom: 1.25rem;
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.section-middle {
+  background-color: var(--cyan);
+}
+
+.pricing {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.section-middle p {
+  color: white;
+}
+
+.rate {
+  margin-left: 0.75rem;
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+
+.section-middle a {
+  padding: 1rem 0;
+  display: block;
+  text-align: center;
+  background-color: var(--bright-yellow);
+  text-decoration: none;
+  box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 30%);
+  border-radius: 5px;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.section-bottom {
+  background-color: var(--cyan-light);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.section-bottom p {
+  color: white;
+  width: 60%;
+  font-size: 0.8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 45% 55%;
+    grid-template-columns: 1fr 1fr;
+    max-width: 40%;
+    min-width: 40rem;
+  }
+
+  section {
+    padding: 2.5rem;
+  }
+
+  .section-top {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .section-middle {
+    grid-row: 2;
+    grid-column: 1;
+    border-bottom-left-radius: var(--border-radius);
+  }
+
+  .section-bottom {
+    grid-row: 2;
+    grid-column: 2;
+    border-bottom-left-radius: 0;
+  }
+
+  .section-bottom p {
+    width: 70%;
+  }
+}
