@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/main.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <section class="error">
+      <h3>Please provide a rating first before submitting.</h3>
+    </section>
+    <main>
+      <!-- Add rating here -->
+      <section class="rating-state-container">
+        <div class="star-container">
+          <img src="./images/icon-star.svg" alt="star" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form action="./views/confirm.html" method="GET">
+          <div class="btn-container">
+            <input name="1" type="button" value="1" />
+            <input name="2" type="button" value="2" />
+            <input name="3" type="button" value="3" />
+            <input name="4" type="button" value="4" />
+            <input name="5" type="button" value="5" />
+          </div>
+          <button name="rating" type="submit" class="btn-submit">submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alexander Hergert</a>.
+    </footer>
+  </body>
+</html>
