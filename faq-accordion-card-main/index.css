@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /*#### Text*/
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  /*#### Gradient
+Background gradient:*/
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /*### Neutral
+    #### Text*/
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  /*#### Dividers*/
+  --light-grayish-blue: hsl(240, 5%, 91%);
+  /*#### Borderradius*/
+  --border-radius: 25px;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 10rem;
+  padding-bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--soft-violet),
+    var(--soft-blue)
+  );
+}
+
+main {
+  position: relative;
+  background-color: var(--light-grayish-blue);
+  border-radius: var(--border-radius);
+  width: 22rem;
+  padding: 0 2rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+  position: relative;
+  top: -9rem;
+  left: 1rem;
+  display: block;
+}
+
+.img-illustration {
+  width: 90%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.img-shadow {
+  width: 90%;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: var(--soft-red);
+}
+
+article a {
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+}
+
+section img {
+  width: 1rem;
+  transition-property: transform;
+  transition-duration: 0.25s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article .article-container {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+article p {
+  display: none;
+  color: var(--dark-grayish-blue);
+  margin-top: 0;
+}
+
+#faq-1:target h2 {
+  font-weight: 700;
+}
+#faq-1:target p {
+  display: block;
+}
+#faq-1:target img {
+  transform: rotate(180deg);
+}
+
+#faq-2:target h2 {
+  font-weight: 700;
+}
+#faq-2:target p {
+  display: block;
+}
+#faq-2:target img {
+  transform: rotate(180deg);
+}
+
+#faq-3:target h2 {
+  font-weight: 700;
+}
+#faq-3:target p {
+  display: block;
+}
+#faq-3:target img {
+  transform: rotate(180deg);
+}
+
+#faq-4:target h2 {
+  font-weight: 700;
+}
+#faq-4:target p {
+  display: block;
+}
+#faq-4:target img {
+  transform: rotate(180deg);
+}
+
+#faq-5:target h2 {
+  font-weight: 700;
+}
+#faq-5:target p {
+  display: block;
+}
+#faq-5:target img {
+  transform: rotate(180deg);
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+}
+
+.desktop-pattern {
+  display: none;
+}
+
+.img-illustration-desktop {
+  display: none;
+}
+
+.img-box {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    padding: 0;
+    flex-direction: row;
+    padding-right: 12rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 56rem;
+    height: 60vh;
+    padding-right: 6rem;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .overflow {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  section {
+    width: 40rem;
+  }
+
+  h1 {
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .desktop-pattern {
+    position: absolute;
+    left: -35rem;
+    top: -8rem;
+    display: block;
+  }
+
+  .img-illustration-desktop {
+    position: absolute;
+    left: -8rem;
+    top: 12rem;
+    width: 33rem;
+    display: block;
+  }
+
+  .img-box {
+    position: relative;
+    left: 5.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    display: block;
+    filter: drop-shadow(-0.5rem 1rem 1rem rgba(0, 0, 0, 0.5));
+  }
+
+  .img-illustration {
+    display: none;
+  }
+
+  .img-shadow {
+    display: none;
+  }
+
+  footer {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+  }
+}
