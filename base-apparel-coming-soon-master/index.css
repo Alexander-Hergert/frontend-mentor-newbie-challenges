@@ -73,6 +73,7 @@ input {
   border-radius: var(--border-radius);
   border: 2px solid var(--desaturated-red);
   /* border-color: var(--soft-red); */
+  background-color: var(--gradient-background);
 }
 
 form p {
