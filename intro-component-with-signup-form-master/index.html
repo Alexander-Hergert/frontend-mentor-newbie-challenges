@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <section class="intro">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="form">
+        <article>
+          <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+        </article>
+        <form action="/" novalidate="">
+          <div>
+            <input
+              type="text"
+              name="firstname"
+              aria-labelledby="firstname"
+              placeholder="First Name"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="circle red exclamation mark"
+            />
+          </div>
+          <h6>First Name cannot be empty</h6>
+          <div>
+            <input
+              type="text"
+              name="lastname"
+              aria-labelledby="lastname"
+              placeholder="Last Name"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="circle red exclamation mark"
+            />
+          </div>
+          <h6>Last Name cannot be empty</h6>
+          <div>
+            <input
+              type="email"
+              name="email"
+              aria-labelledby="email"
+              placeholder="Email Address"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="circle red exclamation mark"
+            />
+          </div>
+          <h6>Looks like this is not an email</h6>
+          <div>
+            <input
+              type="password"
+              name="password"
+              aria-labelledby="password"
+              placeholder="Password"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="circle red exclamation mark"
+            />
+          </div>
+          <h6>Password cannot be empty</h6>
+          <input type="submit" value="Claim your free trial" />
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alexander Hergert</a>.
+      </p>
+    </footer>
+  </body>
+</html>
