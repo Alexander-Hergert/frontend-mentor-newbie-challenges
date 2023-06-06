@@ -147,6 +147,7 @@ h6 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
+    justify-content: center;
     justify-items: center;
     align-items: center;
     gap: 2rem;
@@ -156,6 +157,14 @@ h6 {
   section.intro {
     text-align: left;
     width: 30rem;
+  }
+
+  section.form{
+    width: 38rem;
+  }
+
+  article{
+    padding: 0.5rem;
   }
 
   h1 {
